@@ -209,6 +209,7 @@ open class JXPagingListContainerView: UIView {
             }
             if #available(iOS 11.0, *) {
                 self.collectionView.contentInsetAdjustmentBehavior = .never
+                self.collectionView.semanticContentAttribute = .forceLeftToRight
             }
             containerVC.view.addSubview(collectionView)
             //让外部统一访问scrollView
